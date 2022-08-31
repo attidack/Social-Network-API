@@ -1,7 +1,7 @@
 
   # Social-Network-API
   
-  ![LicenseBadge](https://img.shields.io/github/license/attidack@gmail.com/Social-Network-API)
+  ![LicenseBadge](https://img.shields.io/github/license/attidack/Social-Network-API)
   
 
   ## Description
@@ -69,7 +69,7 @@ SOFTWARE.
 | JavaScript Data|
 
   ## Questions
-  You can reach me with my [github profile](https://github.com/attidack@gmail.com)
+  You can reach me with my [github profile](https://github.com/attidack)
    or reach me by [Email](mailto:attidack@gmail.com)
 
 
