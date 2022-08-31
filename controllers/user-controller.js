@@ -24,7 +24,6 @@ const userController = {
         path: 'thoughts',
         select: '-__v'
       })
-      .select('-__v')
       .then(dbSocialData => res.json(dbSocialData))
       .catch(err => {
         console.log(err);

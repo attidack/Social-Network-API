@@ -56,12 +56,12 @@ const thoughtController = {
   },
 
 // add reaction
-    addReaction({ params }, res) {
+    addReaction({ params, body }, res) {
         Thought.findOneAndUpdate(
-            { _id: params.id },
-            {$addToSet: {reactions: params.reactionId}},
-            { runValidators: true, new: true }
-            ).then(dbSocialData => {
+            { _id: params.thoughtId },
+            { $addToSet: { reactions: body }  },
+            { new: true })
+            .then(dbSocialData => {
                 if(!dbSocialData) {
                     res.status(404).json({ message: "No reaction found with that id. "});
                     return;
@@ -73,10 +73,10 @@ const thoughtController = {
 
     // delete reaction
     deleteReaction({ params }, res) {
-        Thought.findOneAndDelete(
-            { _id: params.id },
+        Thought.findOneAndUpdate(
+            { _id: params.thoughtId },
             { $pull: { reactions: { reactionId: params.reactionId } } },
-            { runValidators: true, new: true }
+            { new: true }
             ).then(dbSocialData => {
                 if(!dbSocialData) {
                     res.status(404).json({ message: "No reaction found with that id. "});
