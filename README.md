@@ -34,7 +34,7 @@ npm start
 ```
 
   ## Insomnia
-  [insomnia data](/assets/insomnia/Insomnia_2022-08-30.json)
+  [insomnia data](/assets/insomnia/Insomnia.json)
   
   ## License
    MIT License
