@@ -58,8 +58,8 @@ const thoughtController = {
 // add reaction
     addReaction({ params }, res) {
         Thought.findOneAndUpdate(
-            { _id: params.thoughtId },
-            { $addToSet: { reactions: req.body } },
+            { _id: params.id },
+            {$addToSet: {reactions: params.reactionId}},
             { runValidators: true, new: true }
             ).then(dbSocialData => {
                 if(!dbSocialData) {

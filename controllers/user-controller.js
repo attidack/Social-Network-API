@@ -13,7 +13,7 @@ const userController = {
       });
   },
 
-  // get one pizza by id
+  // get one user by id
   getUserById({ params }, res) {
     User.findOne({ _id: params.id })
     .populate({
@@ -32,14 +32,14 @@ const userController = {
       });
   },
 
-  // createPizza
+  // create User
   createUser({ body }, res) {
     User.create(body)
       .then(dbSocialData => res.json(dbSocialData))
       .catch(err => res.json(err));
   },
 
-  // update pizza by id
+  // update user by id
   updateUser({ params, body }, res) {
     User.findOneAndUpdate({ _id: params.id }, body, { new: true, runValidators: true })
       .then(dbSocialData => {
@@ -52,7 +52,7 @@ const userController = {
       .catch(err => res.json(err));
   },
 
-  // delete pizza
+  // delete user
   deleteUser({ params }, res) {
     User.findOneAndDelete({ _id: params.id })
       .then(dbSocialData => res.json(dbSocialData))
