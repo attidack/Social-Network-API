@@ -14,12 +14,12 @@
   ![Screenshot](/assets/imgs/screenshot.png)
 
   ## Table of Contents
-  - [Installation](#Installation)
-  - [Usage](#Usage)
+  - [Installation](#installation)
+  - [Insomnia](#insomnia)
   - [License](#license)
-  - [Technology](#Technology)
-  - [Tests](#Tests)
-  - [Questions](#Questions)
+  - [Technology](#technology)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
   ## Installation
   
@@ -33,7 +33,7 @@ npm install
 npm start
 ```
 
-  ## Insomnia Route data
+  ## Insomnia
   [insomnia data](/assets/insomnia/Insomnia_2022-08-30.json)
   
   ## License
